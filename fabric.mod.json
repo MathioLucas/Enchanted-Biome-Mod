@@ -1,0 +1,29 @@
+// fabric.mod.json
+{
+  "schemaVersion": 1,
+  "id": "enchantedforest",
+  "version": "${version}",
+  "name": "Enchanted Forest Adventure",
+  "description": "Adds the Enchanted Forest biome with new mobs, items, and structures.",
+  "authors": ["Your Name"],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/yourname/enchantedforest"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.yourname.enchantedforest.EnchantedForestMod"
+    ]
+  },
+  "mixins": [
+    "enchantedforest.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19",
+    "java": ">=17"
+  }
+}

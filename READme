@@ -1,0 +1,256 @@
+Enchanted Forest Adventure Mod
+Minecraft Version: 1.19
+Mod Loader: Fabric
+Author: Mathio
+
+Overview
+The Enchanted Forest Adventure mod introduces a new biome called the Enchanted Forest to Minecraft. This mystical biome is filled with unique flora, creatures, and structures that enhance your gameplay experience.
+
+Features
+New Biome: Enchanted Forest
+Lush environment with Mystic Trees and ambient magical particles.
+New Mobs:
+Forest Sprite: Friendly beings that grant buffs to players.
+Tree Guardian: Powerful entities that protect the forest.
+Custom Items:
+Magic Wand: Allows players to cast spells like shooting fireballs.
+Enchanted Fruit: Consumable that grants special abilities.
+Custom Blocks:
+Mystic Log: Wood from Mystic Trees.
+Mystic Leaves: Leaves from Mystic Trees.
+Custom Structures:
+Ancient Shrine: Hidden structures containing valuable loot.
+Table of Contents
+Project Structure
+Setup Instructions
+Prerequisites
+Project Setup
+Running the Mod
+Mod Details
+Blocks
+Items
+Entities
+Biome
+Assets and Resources
+Notes and Considerations
+Additional Resources
+License
+Project Structure
+
+Collapse
+enchantedforest/
+├── build.gradle
+├── gradle.properties
+├── settings.gradle
+├── LICENSE
+├── src/
+    ├── main/
+        ├── java/
+        │   └── com/yourname/enchantedforest/
+        │       ├── EnchantedForestMod.java
+        │       ├── registry/
+        │       │   ├── ModBlocks.java
+        │       │   ├── ModItems.java
+        │       │   ├── ModEntities.java
+        │       │   └── ModBiomes.java
+        │       ├── world/biome/
+        │       │   └── EnchantedForestBiome.java
+        │       ├── entities/
+        │       │   ├── ForestSpriteEntity.java
+        │       │   └── TreeGuardianEntity.java
+        │       └── items/
+        │           ├── MagicWandItem.java
+        │           └── EnchantedFruitItem.java
+        └── resources/
+            ├── fabric.mod.json
+            ├── assets/
+            │   └── enchantedforest/
+            │       ├── textures/
+            │       ├── models/
+            │       └── lang/
+            └── data/
+                └── enchantedforest/
+Setup Instructions
+Prerequisites
+Java Development Kit (JDK) 17 or higher.
+Minecraft Java Edition version 1.19.
+Fabric Mod Loader and Fabric API for Minecraft 1.19.
+Gradle build tool.
+Integrated Development Environment (IDE): IntelliJ IDEA or Eclipse recommended.
+Git (optional, for version control).
+Project Setup
+Clone the Repository:
+
+If you have a Git repository, clone it using:
+
+BASH
+
+git clone https://github.com/yourname/enchantedforest.git
+Otherwise, create a new directory for the project and place all the files accordingly.
+
+Set Up the Development Environment:
+
+Open your IDE.
+Import the project by selecting the build.gradle file.
+Wait for Gradle to download all necessary dependencies.
+Configure Gradle:
+
+Ensure your gradle.properties and build.gradle files are correctly set up. The project is configured to use Java 17 and Minecraft 1.19.
+
+Assets and Resources:
+
+Add your textures and models to the assets/enchantedforest/ directory.
+Update JSON files for block states, models, and language translations.
+Running the Mod
+Set Up Run Configuration:
+
+In your IDE, create a new run configuration.
+Set the main class to net.fabricmc.devlaunchinjector.Main.
+Use the client environment.
+Run the Client:
+
+Start the Minecraft client from your IDE.
+Create a new world or use an existing one for testing.
+Verify that the mod functionalities are working as expected.
+Building the Mod JAR:
+
+Use Gradle to build the mod:
+
+BASH
+
+./gradlew build
+The mod JAR file will be located in build/libs/.
+
+Installing the Mod:
+
+Copy the mod JAR file to your Minecraft mods folder.
+Ensure that Fabric Loader and Fabric API are installed.
+Mod Details
+Blocks
+Mystic Log:
+
+Description: Wood from the Mystic Trees in the Enchanted Forest.
+Uses: Building material, can be crafted into planks.
+Mystic Leaves:
+
+Description: Leaves from Mystic Trees.
+Uses: Decorative block, may drop Enchanted Fruits.
+Items
+Magic Wand:
+
+Description: A wand imbued with magical powers.
+Functionality: Allows the player to cast spells, such as shooting fireballs.
+Crafting Recipe: Custom recipe defined in data files.
+Enchanted Fruit:
+
+Description: A rare fruit with mystical properties.
+Functionality: Grants the player special abilities like levitation when consumed.
+Entities
+Forest Sprite:
+
+Type: Passive mob.
+Behavior: Friendly; may follow players and grant buffs upon interaction.
+Spawn: Commonly found in the Enchanted Forest biome.
+Tree Guardian:
+
+Type: Hostile mob.
+Behavior: Attacks players who harm the forest.
+Abilities: Strong melee attacks and high health.
+Biome
+Enchanted Forest Biome:
+
+Environment: Lush forests with Mystic Trees and ambient magic particles.
+Features: Unique vegetation, custom structures like Ancient Shrines.
+Mobs: Home to Forest Sprites and Tree Guardians.
+Assets and Resources
+Textures:
+
+Create custom textures for blocks, items, and entities.
+Place texture files in assets/enchantedforest/textures/.
+Models:
+
+Define block and item models in assets/enchantedforest/models/.
+Language Files:
+
+Add translations in assets/enchantedforest/lang/en_us.json.
+Data Files:
+
+Loot Tables: Define in data/enchantedforest/loot_tables/.
+Recipes: Add custom recipes in data/enchantedforest/recipes/.
+World Generation: Configure biome features in data/enchantedforest/worldgen/.
+Notes and Considerations
+Texture and Model Creation:
+
+Use tools like Blockbench for entity models.
+Create textures using graphic editors like GIMP or Aseprite.
+Entity AI and Behavior:
+
+Implement custom AI tasks for new mobs.
+Balance the spawn rates and abilities for fair gameplay.
+Biome Customization:
+
+Adjust biome parameters to achieve the desired atmosphere.
+Add unique features like ambient sounds or particles.
+Testing:
+
+Regularly test changes in a controlled environment.
+Check for compatibility with other mods if applicable.
+Packaging the Mod:
+
+Ensure all assets and data files are correctly referenced.
+Verify that the mod loads without errors before distributing.
+Additional Resources
+Fabric Mod Development:
+
+Fabric Wiki
+Fabric API GitHub
+Modding Tutorials:
+
+Modding Tutorial Playlist
+Modeling and Texturing Tools:
+
+Blockbench
+Aseprite
+GIMP
+Community Forums:
+
+Minecraft Forge Forums
+Fabric Discord Server
+
+
+Creating a ZIP Archive
+To package all the project files into a ZIP archive:
+
+Ensure all files are saved and up to date.
+
+Navigate to the Project Directory:
+
+Open a terminal or command prompt and navigate to the root directory of the project.
+
+Create the ZIP File:
+
+On Windows:
+
+BATCH
+
+tar -a -c -f enchantedforest.zip enchantedforest/
+On macOS/Linux:
+
+BASH
+
+zip -r enchantedforest.zip enchantedforest/
+Verify the ZIP File:
+
+Ensure that enchantedforest.zip contains all the project files and directories.
+Distribute or Archive:
+
+You can now share the ZIP file or keep it as a backup of your project.
+Conclusion
+The Enchanted Forest Adventure mod offers an immersive experience by adding new content to Minecraft. This project serves to cover key aspects such as:
+
+World Generation: Creating custom biomes and structures.
+Entity Programming: Implementing new creatures with unique behaviors.
+Item and Block Development: Designing custom items and blocks with special functionalities.
+Resource Management: Handling textures, models, and other assets.
+By following this guide, you can set up the project, understand its structure, and start customizing or extending the mod to your liking.
+
